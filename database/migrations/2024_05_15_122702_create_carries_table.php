@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('carries', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('nome');
+            $table->string('cep');
             $table->string('endereco');
             $table->string('bairro');
             $table->string('cidade');
